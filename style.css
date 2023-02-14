@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#first-page {
+    height: 1000px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#navbar {
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid black; */
+    color:white;
+}
+
+#navbar>div:nth-child(1) {
+    height: 65px;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: black;
+    display: flex;
+}
+
+#navbar>div:nth-child(2) {
+    height: 35px;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #131921;
+}
+
+#navbar-top-div>div:nth-child(1){
+    height: 65px;
+    width:130px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 100;
+    display: flex;
+}
+
+#navbar-top-div>div:nth-child(1)>h1{
+    font-weight: 500;
+
+}
+#navbar-top-div>div:nth-child(1)>small{
+    margin-top: 10px;
+
+}
+#navbar-top-div>div:nth-child(2)>{
+    height: 65px;
+    width:150px;
+    border: 1px solid white;
+    color: white;
+}
+
