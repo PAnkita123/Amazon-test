@@ -174,3 +174,28 @@
     height: 100%;
     width: 100%;
 }
+
+#background{
+    height: 620px;
+    width:100%;
+    border: 1px solid black;
+    overflow:hidden;
+    background: url(https://m.media-amazon.com/images/I/71IlDjsFsRL._SX3000_.jpg);
+    background-size: cover;
+}
+#background>img{
+    height: 100%;
+    width: 100%;
+}
+#top-bottom{
+    display: flex;
+    justify-content: space-around;
+}
+#top-bottom>div{
+    height:450px;
+    width:350px;
+    border:1px solid black;
+    margin-top: 250px;
+    background-color: white;
+    
+}
