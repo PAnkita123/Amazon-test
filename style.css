@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
 }
 
 #first-page {
@@ -170,7 +171,11 @@ color:black;}
 #navbar-bottom>div{
     height:30px;
     width:20%;
-    /* border: 1px solid white; */
+    border: 1 px solid #232f3e;
+}
+
+#navbar-bottom>div:hover{
+    border:1px solid white
 }
 #navbar-bottom>div>h4{
     font-weight: 100;
