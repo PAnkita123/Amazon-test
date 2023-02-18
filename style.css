@@ -40,11 +40,23 @@
 #navbar-top-div>div:nth-child(1){
     height: 65px;
     width:130px;
-    /* border: 1px solid white; */
+    border: 2px solid black;
     color: white;
     font-weight: 100;
-    display: flex;
+    /* display: flex; */
     /* margin-top: 10px; */
+
+}
+#navbar-top-div>div:nth-child(1):hover{
+    border-color: white;
+
+}
+#navbar-top-div>div:nth-child(2){border: 2px solid black;
+color:black;}
+
+#navbar-top-div>div:nth-child(2):hover{
+    border-color: white;
+
 }
 
 #navbar-top-div>div:nth-child(1)>h1{
@@ -54,6 +66,12 @@
 #navbar-top-div>div:nth-child(1)>small{
     margin-top: 10px;
 
+
+}
+#navbar-top-div>div:nth-child(1)>img{
+    height: 25px;;
+    width:100px;
+    margin-bottom: 100px;
 }
 #navbar-top-div>div:nth-child(2){
     height: 65px;
