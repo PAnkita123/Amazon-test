@@ -60,11 +60,51 @@ function login(event) {
         document.getElementById("password").value = '';
         alert("You are logged in successfully!");
         window.location.href = "./index.html";
-        
-    } 
+
+    }
     else {
         alert("Wrong credentials entered!Please use correct email and password!");
     }
 
 }
 
+var gettingEmail;
+function forgetPassword() {
+    // alert("worked")
+    var dataFromLS = JSON.parse(localStorage.getItem("userData"));
+    var userEmail = document.getElementById("email").value;
+    gettingEmail = userEmail;
+
+    var flag = false;
+    for (var i = 0; i <dataFromLS.length; i++) {
+        if (dataFromLS[i].email===userEmail)
+            flag = true;
+    }
+
+    if (flag === true) {
+        var newCode = `<div id="set-pass"><small>Set a New Password!</small><br/><input type="password" id="password"/><br/><br/><button onclick="newPassword()">set new password</button></div>`
+        var divFromHTML=document.getElementById("change") 
+        divFromHTML.innerHTML=newCode;
+        alert('set new Password!')
+
+    }else{
+        alert("please check your email, its not in our database!")
+    }
+
+}
+
+function newPassword(){
+    var userPassword=document.getElementById("password").value;
+    var dataFromLS=JSON.parse(localStorage.getItem("userData"));
+
+    for(var i=0; i<dataFromLS.length;i++){
+        if(dataFromLS[i].email === gettingEmail){
+            dataFromLS[i].password = userPassword
+        } 
+    }
+    localStorage.setItem('userData', JSON.stringify(dataFromLS));
+    gettingEmail="";
+    window.location.href='./login.html';
+    alert("password changed, now login.")
+
+}
