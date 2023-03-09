@@ -25,7 +25,17 @@
 
         </form>
 
-    </div>
+    </div><script>
+        window.onload=function(){
+            var dataFromLS=JSON.parse(localStorage.getItem("currentUser"));
+            if(dataFromLS){
+                window.location.href="./home.html"
+                alert("Already Logged!")
+            }
+        }
+    </script>
+
+
     <script src="./script.js"></script>
     
 </body>

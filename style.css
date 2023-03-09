@@ -677,10 +677,7 @@ button>input{
     border-top: none;
 }
 
-/* a{
-    text-decoration: none;
-    color:white;
-} */
+
 
 #Sign-In{
     height:200px;
@@ -692,10 +689,7 @@ button>input{
     border-radius: 5px;
 }
 
-/* #Sign-In>form>input:hover{
-    box-shadow: 2px 2px 2px 2px #FEBE10;
-    border-color:1px solid orangered;
-} */
+
 #change{
     height:200px;
     width:280px;

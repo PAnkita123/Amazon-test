@@ -15,7 +15,7 @@ function register(event) {
 
     // Loop through the existing user data to check if the email is already present
     var flag = false;
-    for (i = 0; i < dataFromLS.length; i++) {
+    for (var i = 0; i < dataFromLS.length; i++) {
         if (dataFromLS[i].email === userEmail) {
             flag = true;
         }
@@ -59,6 +59,9 @@ function login(event) {
         document.getElementById("email").value = '';
         document.getElementById("password").value = '';
         alert("You are logged in successfully!");
+        var currentUser={};
+        currentUser["curent-user-email"]=userEmail;
+        localStorage.setItem("currentUser", JSON.stringify(currentUser))
         window.location.href = "./index.html";
 
     }
